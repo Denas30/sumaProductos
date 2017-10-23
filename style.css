@@ -1,0 +1,37 @@
+/* Cuadro donde esta toda la interfaz*/
+#cuadro{
+	position: absolute;
+	background-color: #90CAF9;
+	width: 600px;
+	height: 150px;
+	border-radius: 10px 149px 10px 10px;
+   -moz-border-radius: 10px 149px 10px 10px;
+   -webkit-border-radius: 10px 149px 10px 10px;
+	border: 15px solid #0D47A1;
+
+}
+/* borde al input donde se le coloca un monto adicional*/
+#serAdicional{
+	border-radius: 41px 41px 41px 41px;
+	-moz-border-radius: 41px 41px 41px 41px;
+	-webkit-border-radius: 41px 41px 41px 41px;
+	border: 3px solid #000000;
+}
+
+/*  borde al input donde sale la sumatorio de los checkbox*/
+ .preAdicional{
+  border-radius: 41px 41px 41px 41px;
+  -moz-border-radius: 41px 41px 41px 41px;
+  -webkit-border-radius: 41px 41px 41px 41px;
+  border: 3px solid #000000;
+
+ }
+
+ /*  background de los checkbox*/
+ #check{
+ background-color: #E3F2FD;
+ width: 200px;
+ border-radius: 41px 41px 41px 41px;
+-moz-border-radius: 41px 41px 41px 41px;
+-webkit-border-radius: 41px 41px 41px 41px;
+}

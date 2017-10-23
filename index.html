@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>suma de productos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="suma.js"></script>
+
+</head>
+  <body>
+  	<script type="text/javascript">
+       //funcion para solo colocar numero en la cedula no acepta letras
+			function isNumber(evt) {
+			        evt = (evt) ? evt : window.event;
+			        var charCode = (evt.which) ? evt.which : evt.keyCode;
+			        if ( (charCode > 31 && charCode < 48) || charCode > 57) {
+			            return false;
+			        }
+			        return true;
+			    }
+
+  	</script>
+
+	<!--checkboxes para sumar productos de comida -->
+	<div id="cuadro">
+     <ul id="check">
+	  <li><input type="checkbox" precio="10.000" class="sumaCheckboxes" /> Cafe</li>
+	  <li><input type="checkbox" precio="20.000" class="sumaCheckboxes" /> Arroz</li>
+	  <li><input type="checkbox" precio="30.000" class="sumaCheckboxes" /> Harina pan</li>
+	  <li><input type="checkbox" precio="40.000" class="sumaCheckboxes" /> Pasta</li>
+    </ul>
+    <!--cierre del checkbox-->
+
+    <!--monto adicional a la sumatoria de productos-->
+  
+	<div>
+		 <label><strong>Monto Adicional:</strong><label>
+	  	<input type="text" id="serAdicional" class="servicioAdicional" placeholder=" Monto Adicional" required onkeypress="return isNumber(event)"/>
+	
+        <!--cierre del monto adicional a la sumatoria de productos-->
+
+		<label><strong>Precio total:</strong><label>
+		 <!--En este ipunt saldra el monto de la sumatoria-->
+		
+		  <input id="total" class="preAdicional" type="text" placeholder=" 0.00"/>
+		</div>
+    </div>
+</body>
+</html>
